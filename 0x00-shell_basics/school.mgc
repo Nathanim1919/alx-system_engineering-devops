@@ -1,0 +1,5 @@
+#!/bin/bash
+echo -e '0-string SCHOOL School data\n!:mime School'>school.mgc
+file -C -m school.mgc
+file --mime-type -m school.mgc
+file -m school.mgc
