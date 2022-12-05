@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Art | tail -1
+ls -t | head -10
