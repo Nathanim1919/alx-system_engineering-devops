@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
 # This script displays a list of all currently running processes, including process hierarchy.
-
-ps axjf
-
+ps auxf
