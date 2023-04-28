@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# This script displays the message "To infinity and beyond" indefinitely.
-
+# Buzz Lightyear - displays message infinitely and sleeps 2s after
+# each iteration
 while true; do
-  echo "To infinity and beyond"
-  sleep 2
+    echo To infinity and beyond
+    sleep 2
 done
-
