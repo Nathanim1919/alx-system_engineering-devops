@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Find the PID of 7-highlander and kill it
+pid=$(pgrep -f "7-highlander")
+kill "$pid"
