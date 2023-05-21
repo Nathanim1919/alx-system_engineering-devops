@@ -1,10 +1,2 @@
 #!/usr/bin/env ruby
-
-argument = ARGV[0]
-
-if argument =~ /School/
-  puts "School$"
-else
-  puts "$"
-end
-
+puts ARGV[0].scan(/Holberton/).join
