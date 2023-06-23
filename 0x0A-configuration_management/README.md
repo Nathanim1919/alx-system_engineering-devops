@@ -146,7 +146,7 @@ Terminated
 root@d391259bf577:/#
 ```
 
-##Repo:
+## Repo:
 	- GitHub repository: alx-system_engineering-devops  
 	- Directory: 0x0A-configuration_management  
 	- File: 2-execute_a_command.pp  
