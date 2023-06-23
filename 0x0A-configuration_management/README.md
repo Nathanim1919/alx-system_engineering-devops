@@ -107,6 +107,6 @@ Werkzeug 2.1.1
 ```
 
 ## Repo:  
-	- GitHub repository: alx-system_engineering-devops  
-	- Directory: 0x0A-configuration_management  
-	- File: 1-install_a_package.pp
+	- GitHub repository: ```alx-system_engineering-devops```  
+	- Directory: ```0x0A-configuration_management```  
+	- File: ```1-install_a_package.pp```
