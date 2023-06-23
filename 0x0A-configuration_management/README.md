@@ -58,11 +58,11 @@ $ gem install puppet-lint
 ### 0. Create a file
 Using Puppet, create a file in /tmp.  
 Requirements:  
-	- File path is /tmp/school
-	- File permission is 0744
-	- File owner is www-data
-	- File group is www-data
-	- File contains I love Puppet
+	- File path is /tmp/school  
+	- File permission is 0744  
+	- File owner is www-data  
+	- File group is www-data  
+	- File contains I love Puppet  
 Example:
 ```
 root@6712bef7a528:~# puppet-lint --version
@@ -81,6 +81,6 @@ I love Puppetroot@6712bef7a528:~#
 ```
 
 ## Repo:
-	- GitHub repository: alx-system_engineering-devops
-	- Directory: 0x0A-configuration_management
-	- File: 0-create_a_file.pp
+	- GitHub repository: alx-system_engineering-devops  
+	- Directory: 0x0A-configuration_management  
+	- File: 0-create_a_file.pp  
