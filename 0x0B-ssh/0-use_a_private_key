@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # connect to server using ssh
 
-ssh -i ~/.ssh/school -o StrictHostKeyChecking=no ubuntu@server01
+ssh -i ~/.ssh/school -o StrictHostKeyChecking=no ubuntu@54.146.61.33
