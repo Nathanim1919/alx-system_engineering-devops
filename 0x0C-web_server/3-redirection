@@ -18,4 +18,4 @@ if ! grep -q "location /redirect_me {" /etc/nginx/sites-available/default; then
 	sudo service nginx restart
 else
 	 echo "Redirection rule already present. No changes made."
-
+fi
