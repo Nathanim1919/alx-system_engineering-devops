@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Check the Apache service status
+service apache2 status
+
+# If Apache is not running, start it
+service apache2 start
