@@ -1,22 +1,21 @@
-# Install Nginx
-class { 'nginx':
- ensure => present,
+# Install and configure `Nginx` web server to have a custome header
+exec { 'apt_update':
+  command => 'apt-get update',
+  path    => '/usr/bin:/bin',
 }
 
-# Define a custom fact to get the hostname
-fact { 'server_hostname':
- setcode => 'hostname',
+package { 'nginx':
+  ensure  => installed,
+  require => Exec['apt_update'],
 }
 
-# Configure Nginx with the custom HTTP header
-class { 'nginx::config':
- custom_http_header => 'X-Served-By',
- header_value       => $::server_hostname,
+file_line { 'add_custom_header':
+  path  => '/etc/nginx/sites-available/default',
+  line  => "\n\tadd_header X-Served-By ${hostname};",
+  after => 'server_name _;',
 }
 
-# Restart Nginx to apply the changes
-service { 'nginx':
- ensure => running,
- enable => true,
- subscribe => Class['nginx::config'],
+exec { 'restart_nginx':
+  command => 'sudo service nginx restart',
+  path    => '/usr/bin:/bin',
 }
