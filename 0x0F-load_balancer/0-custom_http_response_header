@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-## Configure `Nginx` web server so that each server contains its hostname in its response header
+# Configure `Nginx` web server so that each server contains its hostname in its response header
 sudo apt-get update
 sudo apt-get install nginx -y
 
@@ -27,6 +27,6 @@ E404_RULE="\tlocation /404.html {\n\
 sudo sed -i "/error_page.*404.*;/a \ $E404_RULE" /etc/nginx/sites-available/default
 
 # Configure a custom header
-sudo sed -i "/server_name _;/a \ \n\tadd_header X-Served-By \"$(hostname)\";" /etc/nginx/sites-availab
+sudo sed -i "/server_name _;/a \ \n\tadd_header X-Served-By \"$(hostname)\";" /etc/nginx/sites-available/default
 
 sudo service nginx restart
