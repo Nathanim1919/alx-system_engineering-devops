@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Make the fix simple and short
+sudo service nginx restart
+kill -s QUIT "$(cat /var/run/nginx.pid)"
