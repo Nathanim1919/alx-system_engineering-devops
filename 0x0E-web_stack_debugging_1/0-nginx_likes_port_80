@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+
+# Install Nginx
+sudo apt-get update
+sudo apt-get install nginx -y
+
+# Configure Nginx to listen on port 80
+sudo sed -i 's/listen 80 default_server;/listen 80;/' /etc/nginx/sites-available/default
+
+# Restart Nginx to apply changes
+sudo service nginx restart
