@@ -40,5 +40,5 @@ backend http_back
         server 337533-web-02 100.26.160.56:80 check
 
 frontend http_front
-         bind *:80
+         bind *:443 ssl crt /etc/letsencrypt/archive/www.nathanim.tech/fullchain1.pem
          default_backend http_back
