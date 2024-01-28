@@ -1,0 +1,4 @@
+ a MySQL dump and creates a compressed archive out of it
+
+mysqldump -uroot -p"nathan" --all-databases > backup.sql
+tar -czf $(date +%d-%m-%Y).tar.gz backup.sql
