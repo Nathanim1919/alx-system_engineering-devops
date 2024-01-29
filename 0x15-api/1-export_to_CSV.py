@@ -31,7 +31,6 @@ if __name__ == "__main__":
                 task_writer.writerow([userId, name, task.get('completed'),
                                       task.get('title')])
 
-
     print('Employee {} is done with tasks({}/{}):'
           .format(name, completed, totalTasks))
 
