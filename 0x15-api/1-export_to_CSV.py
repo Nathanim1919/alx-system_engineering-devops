@@ -18,7 +18,7 @@ if __name__ == "__main__":
     totalTasks = 0
     completed = 0
     csv_file_name = "{}.csv".format(userId)
-    csv_header = ["USER_ID","USERNAME","TASK_COMPLETED_STATUS","TASK_TITLE"]
+    csv_header = ["USER_ID", "USERNAME", "TASK_COMPLETED_STATUS", "TASK_TITLE"]
 
     with open(csv_file_name, mode='w', newline='') as csv_file:
         task_writer = csv.writer(csv_file, delimiter=',',
@@ -30,7 +30,6 @@ if __name__ == "__main__":
                     completed += 1
                 task_writer.writerow([userId, name, task.get('completed'),
                                       task.get('title')])
-
 
     print('Employee {} is done with tasks({}/{}):'
           .format(name, completed, totalTasks))
