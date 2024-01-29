@@ -14,16 +14,15 @@ if __name__ == "__main__":
     todo_url = "https://jsonplaceholder.typicode.com/todos/{}".format(user_id)
 
     user_response = requests.get(user_url)
-    user_json = user_response.json()
-
     post_response = requests.get(todo_url)
-    post_json = post_response.json()
-    completed_tasks = [task for task in post_json if task["completed"] is True]
-    total_tasks = len(post_json)
+
+
+    completed_tasks = [task for task in post_response if task["completed"] is True]
+    total_tasks = len(post_response)
 
     print(
         "Employee {} is done with tasks({}/{}):".format(
-            user_json["name"], len(completed_tasks), total_tasks
+            user_response["name"], len(completed_tasks), total_tasks
         )
     )
 
