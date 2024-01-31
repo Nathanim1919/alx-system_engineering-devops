@@ -8,11 +8,7 @@ if __name__ == "__main__":
 
     userId = sys.argv[1]
     user = requests.get("https://jsonplaceholder.typicode.com/users/{}"
-<<<<<<< HEAD
                         .format(userId))
-=======
-                    .format(userId))
->>>>>>> cd43104be31893fbf15e20ba19ac1f289ce56f53
     todos = requests.get("https://jsonplaceholder.typicode.com/todos")
     todos = todos.json()
 
