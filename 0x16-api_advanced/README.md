@@ -1,7 +1,7 @@
 # 0x16. API advanced
 `Python` `Scripting` `Back-end` `API`
 
-!(Image)[https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/314/WIxXad8.png]
+![Image](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/314/WIxXad8.png)
 
 ## Background Context
 
@@ -12,8 +12,8 @@ A great API to use for some practice is the Reddit API. There’s a lot of endpo
 ### Resources
 #### Read or watch:
 
-- (Reddit API Documentation)[https://intranet.alxswe.com/rltoken/b-4nD6hwEeNYTwYl5yWNwA]
-- (Query String)[https://intranet.alxswe.com/rltoken/luFn_zrgmAQ0OAO_PEI9bA]
+- [Reddit API Documentation](https://intranet.alxswe.com/rltoken/b-4nD6hwEeNYTwYl5yWNwA)
+- [Query String](https://intranet.alxswe.com/rltoken/luFn_zrgmAQ0OAO_PEI9bA)
 
 
 ### Learning Objectives
